@@ -1,0 +1,14 @@
+# Versions recorded in the environment used for the paper (Colab Pro, NVIDIA A100 80 GB, Python 3.13).
+# On Colab, only the packages installed in the notebook's first cell need to be installed.
+torch==2.14.1
+transformers==5.23.0
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.4.6
+# Installed in the notebook without a recorded version; pin them after your first run if needed.
+accelerate
+uroman
+sentencepiece
+protobuf
+scipy
+matplotlib

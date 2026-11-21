@@ -1,0 +1,10 @@
+task,model,direction,slice,n,vanilla,vanilla+TTN,aug_det,aug_sample,sb_det,scriptbridge
+myc,xlm-roberta-base,arabic→latin,digit-letters (3/7/9…),393,42.96,68.33,75.11,76.38,75.19,76.67
+myc,xlm-roberta-base,arabic→latin,French tokens,128,59.17,67.5,76.01,76.98,78.24,78.69
+myc,xlm-roberta-base,arabic→latin,elongation,165,43.18,69.21,68.66,67.52,69.78,70.94
+myc,xlm-roberta-base,arabic→latin,short (≤5 tokens),418,49.13,62.62,69.33,65.6,68.33,70.26
+myc,xlm-roberta-base,arabic→latin,long (>15 tokens),62,48.38,65.69,78.98,78.89,82.22,80.46
+myc,xlm-roberta-base,latin→arabic,elongation,421,69.71,69.13,76.5,73.9,75.99,75.99
+myc,xlm-roberta-base,latin→arabic,mixed script,45,64.0,61.99,61.99,61.99,60.11,60.11
+myc,xlm-roberta-base,latin→arabic,short (≤5 tokens),717,62.1,58.44,66.35,66.15,67.2,68.2
+myc,xlm-roberta-base,latin→arabic,long (>15 tokens),754,67.25,63.09,73.43,73.63,72.74,75.76

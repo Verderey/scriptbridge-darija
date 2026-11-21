@@ -1,0 +1,7 @@
+task,model,direction,slice,n,vanilla,vanilla+TTN,aug_det,aug_sample,sb_det,scriptbridge
+offensive_clean,xlm-roberta-base,arabic→latin,digit-letters (3/7/9…),223,42.11,75.77,66.36,57.3,66.27,60.73
+offensive_clean,xlm-roberta-base,arabic→latin,French tokens,535,27.28,76.23,31.77,20.85,28.88,22.39
+offensive_clean,xlm-roberta-base,arabic→latin,short (≤5 tokens),294,44.39,77.5,64.62,45.92,62.19,50.26
+offensive_clean,xlm-roberta-base,arabic→latin,long (>15 tokens),149,31.17,72.17,28.7,26.59,27.72,26.32
+offensive_clean,xlm-roberta-base,latin→arabic,short (≤5 tokens),631,,,,,,
+offensive_clean,xlm-roberta-base,latin→arabic,long (>15 tokens),582,,,,,,

@@ -1,0 +1,9 @@
+task,script,label,n,pct_with_emoji
+myc,arabic,negative,8147,66.71167300846938
+myc,arabic,positive,6454,99.92252866439418
+myc,latin,negative,1500,80.80000000000001
+myc,latin,positive,3067,99.73915878708836
+offensive,arabic,0,11220,0.0
+offensive,arabic,1,4104,0.0
+offensive,latin,0,1459,0.0
+offensive,latin,1,3613,0.0

@@ -1,0 +1,8 @@
+task,model,direction,slice,n,vanilla,vanilla+TTN,aug_det,aug_sample,sb_det,scriptbridge
+offensive,SI2M-Lab/DarijaBERT,arabic→latin,digit-letters (3/7/9…),227,56.59,77.54,74.14,73.56,76.01,76.81
+offensive,SI2M-Lab/DarijaBERT,arabic→latin,French tokens,545,75.07,87.08,86.94,88.04,87.36,88.7
+offensive,SI2M-Lab/DarijaBERT,arabic→latin,mixed script,44,82.0,92.53,87.55,92.73,87.55,90.18
+offensive,SI2M-Lab/DarijaBERT,arabic→latin,short (≤5 tokens),296,77.87,82.78,86.75,85.58,86.47,87.51
+offensive,SI2M-Lab/DarijaBERT,arabic→latin,long (>15 tokens),147,55.05,86.26,76.33,82.83,76.56,81.24
+offensive,SI2M-Lab/DarijaBERT,latin→arabic,short (≤5 tokens),622,46.47,49.63,67.93,70.57,67.77,65.12
+offensive,SI2M-Lab/DarijaBERT,latin→arabic,long (>15 tokens),611,48.54,48.96,59.16,60.59,55.06,51.39

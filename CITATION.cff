@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite the paper below."
+title: "ScriptBridge: code for zero-shot cross-script classification of Moroccan Darija"
+version: 1.0.0
+license: MIT
+type: software
+authors:
+  - given-names: Soufiane
+    family-names: Hourri
+    email: s.hourri@uca.ac.ma
+    affiliation: "Laboratory of Process, Industrial Signals and Computer Science, Cadi Ayyad University, Safi, Morocco"
+  - given-names: Abdelhay
+    family-names: Zoizou
+    affiliation: "Laboratory of Sciences, Engineering and Management, Higher School of Technology, Sidi Mohamed Ben Abdellah University, Fez, Morocco"
+  - given-names: Ilham
+    family-names: El Ouariachi
+    affiliation: "Computer Science Department, Faculty of Sciences, Moulay Ismail University, Meknes, Morocco"
+  - given-names: Brahim
+    family-names: Ait Skourt
+    affiliation: "SPM Research Team, ENSIAS, Mohammed V University, Rabat, Morocco"
+  - given-names: Moad Hicham
+    family-names: Safhi
+    affiliation: "C3S Laboratory, Higher School of Technology, Hassan II University, Casablanca, Morocco"
+  - given-names: Mohammed
+    family-names: Bergui
+    affiliation: "Laboratory of Intelligent Systems and Applications, Sidi Mohamed Ben Abdellah University, Fez, Morocco"
+keywords:
+  - Moroccan Darija
+  - Arabizi
+  - cross-script transfer
+  - transliteration
+  - benchmark validity
+preferred-citation:
+  type: article
+  title: "Benchmark shortcuts and transliteration consistency in zero-shot cross-script classification of Moroccan Darija"
+  authors:
+    - given-names: Soufiane
+      family-names: Hourri
+    - given-names: Abdelhay
+      family-names: Zoizou
+    - given-names: Ilham
+      family-names: El Ouariachi
+    - given-names: Brahim
+      family-names: Ait Skourt
+    - given-names: Moad Hicham
+      family-names: Safhi
+    - given-names: Mohammed
+      family-names: Bergui
+  year: 2026
+  notes: "Manuscript under review."

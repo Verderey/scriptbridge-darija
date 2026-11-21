@@ -1,0 +1,31 @@
+\begin{lrbox}{\tblbox}\footnotesize\setlength{\tabcolsep}{3pt}%
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+ & \multicolumn{4}{c}{XLM-R} & \multicolumn{4}{c}{DarijaBERT}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & \multicolumn{2}{c}{Ar$\to$La} & \multicolumn{2}{c}{La$\to$Ar} & \multicolumn{2}{c}{Ar$\to$La} & \multicolumn{2}{c}{La$\to$Ar}\\
+Method & Agr. & R@1 & Agr. & R@1 & Agr. & R@1 & Agr. & R@1\\
+\midrule
+Vanilla & 72.3 & 1.3 & 65.7 & 1.6 & 61.1 & 0.7 & 75.9 & 0.8\\
+Aug, argmax $T$ & 70.0 & 1.9 & 78.4 & 2.8 & 66.2 & 0.8 & 65.7 & 0.8\\
+Aug, sampled $T$ & 75.2 & 1.8 & 81.7 & 2.4 & 67.0 & 1.0 & 69.6 & 0.9\\
+Aug + KL, argmax $T$ & 75.9 & 2.9 & 79.0 & 3.4 & 69.2 & 1.1 & 74.2 & 0.9\\
+Aug + KL, sampled $T$ & 76.1 & 3.4 & 83.1 & 3.0 & 70.8 & 1.1 & 78.8 & 0.9\\
+Aug + InfoNCE, argmax $T$ & 72.8 & 29.3 & 77.5 & 26.0 & 67.9 & 4.6 & 66.4 & 2.5\\
+Aug + InfoNCE, sampled $T$ & 74.4 & 31.4 & 81.9 & 20.8 & 67.9 & 4.5 & 70.3 & 2.1\\
+Full objective, argmax $T$ & 76.5 & 33.2 & 81.0 & 28.0 & 70.6 & 5.7 & 72.0 & 2.3\\
+\textbf{ScriptBridge} (full, sampled $T$) & 78.2 & 37.2 & 83.7 & 27.8 & 71.6 & 6.1 & 79.2 & 2.6\\
+Aug + InfoNCE, uroman & 70.8 & 21.2 & -- & -- & 64.0 & 3.5 & -- & --\\
+R-Drop (no transliteration) & 69.9 & 1.5 & 62.7 & 1.5 & 64.3 & 0.6 & 79.3 & 0.8\\
+Char.\ noise + full objective & 69.4 & 4.8 & 76.0 & 7.3 & 66.5 & 0.7 & 80.8 & 1.1\\
+Supervised dual-script reference & 65.4 & 1.6 & 66.9 & 1.6 & 62.2 & 0.7 & 64.3 & 0.8\\
+\bottomrule
+\end{tabular}%
+\end{lrbox}
+\begin{table*}[t]
+\caption{Script invariance of the MYC models, measured on 1{,}000 human-written DoDa sentence pairs that have the same content in both scripts and no task labels. Agr. is the percentage of pairs whose two versions receive the same predicted class, and R@1 is the cross-script retrieval accuracy (\%) with mean-pooled encoder embeddings. Values are means over five seeds.}
+\label{tab:invariance}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\fitbox{\linewidth}
+\end{table*}

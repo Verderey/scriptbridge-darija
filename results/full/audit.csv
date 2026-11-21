@@ -1,0 +1,5 @@
+task,direction,pos_rate_src,pos_rate_tgt,emoji_only_cross_F1,majority_cross_F1,length_only_cross_F1,charLR_in,charLR_cross,charLR_cross_TTN,charLR_cross_AUROC,pct_src_train_with_other_letters,pct_mixed_src,pct_mixed_tgt,AUROC_after_strip,AUROC_without_mixed,near_dup_tgt_items,contaminated
+myc,arabic→latin,45.3,65.36,98.24,25.73,51.12,84.52,39.88,73.76,53.92,3.18,1.56,1.3,48.95,59.35,3,False
+myc,latin→arabic,65.41,45.29,97.8,31.17,57.36,79.96,31.29,74.0,55.63,1.23,1.01,1.7,52.6,45.8,14,False
+offensive,arabic→latin,29.84,75.64,22.34,19.59,19.59,77.81,84.09,82.16,92.82,2.49,1.29,4.68,58.37,43.78,0,True
+offensive,latin→arabic,75.63,29.85,21.12,22.99,24.14,87.63,42.18,57.59,50.47,7.76,4.69,1.03,46.0,49.16,0,False

@@ -1,0 +1,22 @@
+\begin{lrbox}{\tblbox}\footnotesize\setlength{\tabcolsep}{2.6pt}%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & F1 & F1$_{\text{bal}}$ & BA & ECE & F1$_{\text{orc}}$\\
+\midrule
+Vanilla & 46.8 / 50.6 & 39.8 / 44.1 & 52.0 / 53.8 & 18.5 / 12.1 & 57.6 / 60.1\\
+Vanilla + TTN & 49.3 / 47.8 & 50.1 / 51.5 & 50.9 / 51.0 & 16.0 / 26.6 & 52.5 / 53.2\\
+Aug, argmax $T$ & 53.2 / 64.7 & 48.0 / 59.2 & 55.2 / 63.6 & 7.3 / 10.2 & 57.9 / 70.5\\
+Aug, sampled $T$ & 53.2 / 65.2 & 48.3 / 60.4 & 55.1 / 64.5 & 5.5 / 8.5 & 58.3 / 71.0\\
+Full objective, argmax $T$ & 51.9 / 64.4 & 45.4 / 59.0 & 54.7 / 63.4 & 6.8 / 8.8 & 57.1 / 70.8\\
+\textbf{ScriptBridge} (full, sampled $T$) & 52.8 / 61.1 & 47.0 / 55.2 & 55.0 / 61.1 & 4.4 / 5.8 & 57.3 / 70.2\\
+Supervised dual-script reference$^{\ddagger}$ & 76.3 / 81.2 & 75.1 / 81.0 & 75.3 / 80.5 & 9.4 / 6.3 & 77.0 / 81.5\\
+\bottomrule
+\end{tabular}%
+\end{lrbox}
+\begin{table*}[t]
+\caption{Offensive Latin$\to$Arabic under label-prior shift, with 75.6\% offensive items in the Latin-script training data and 29.8\% in the Arabic-script test data. Each cell gives XLM-R / DarijaBERT, averaged over five seeds. F1 is macro-F1 under the argmax decision rule, which for two classes equals a threshold of 0.5 on the predicted probability of the offensive class. F1$_{\text{bal}}$ is macro-F1 on a class-balanced test subsample, BA is balanced accuracy and ECE is expected calibration error, for which lower is better. F1$_{\text{orc}}$ uses a threshold tuned post hoc on the target test set and is a diagnostic comparison only, not a zero-shot result.}
+\label{tab:calib}
+\centering\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\fitbox{\linewidth}
+\end{table*}
