@@ -32,9 +32,6 @@ results/main_results.csv                          per-system means and standard 
 results/contrasts.csv                             primary and secondary contrasts with bootstrap intervals and Holm-adjusted p-values
 results/factorial_effects.csv                     main effects of sampling, KL and InfoNCE
 results/full/                                     complete outputs of the run reported in the paper
-paper/make_tables.py                              rebuilds the LaTeX result tables from results/
-paper/make_figures.py                             rebuilds the result figures from results/
-paper/tables/, paper/figures/                     tables and figures as used in the paper
 requirements.txt                                  library versions used for the paper
 CITATION.cff                                      citation metadata
 ```
@@ -60,14 +57,6 @@ The prediction files follow the row order of the target test split, which the sp
 Open `notebooks/ScriptBridge_Darija_CrossScript.ipynb` in Google Colab, select a GPU runtime (an A100 is recommended, an L4 also works but is slower) and run all cells. The datasets are downloaded automatically from their original sources.
 
 Set `QUICK_RUN=True` in the configuration cell for an end-to-end check on a subsample, which takes about ten minutes. The full run trains every configuration with several seeds and takes many hours of GPU time. Set `SAVE_TO_DRIVE=True` to write results to Google Drive. Results are saved after each run, so an interrupted session can continue from where it stopped.
-
-To rebuild the tables and figures from the saved results, run:
-
-```
-cd paper
-python make_tables.py
-python make_figures.py
-```
 
 ## Data
 
