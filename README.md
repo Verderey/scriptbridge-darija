@@ -1,4 +1,4 @@
-# ScriptBridge
+# Benchmark shortcuts and transliteration consistency in zero-shot cross-script classification of Moroccan Darija
 
 Code and results for the paper **Benchmark shortcuts and transliteration consistency in zero-shot cross-script classification of Moroccan Darija**.
 

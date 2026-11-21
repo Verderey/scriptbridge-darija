@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or its results, please cite the paper below."
-title: "ScriptBridge: code for zero-shot cross-script classification of Moroccan Darija"
+title: "Benchmark shortcuts and transliteration consistency in zero-shot cross-script classification of Moroccan Darija"
 version: 1.0.0
 license: MIT
 type: software
